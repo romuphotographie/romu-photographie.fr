@@ -87,6 +87,11 @@ table.tarifs td{font-size:1rem}
 table.tarifs tr:hover td{background:rgba(230,184,102,.06)}
 .note-tarifs{max-width:60rem;margin:-.5rem auto 2rem;font-size:.85rem;opacity:.7;text-align:left}
 
+/* --- Lune en fond, accueil uniquement --- */
+body.accueil{position:relative}
+body.accueil::before{content:"";position:fixed;inset:0;background:url('lune-fond.jpg') no-repeat;background-position:top right;background-size:min(70vw,640px);opacity:.14;mix-blend-mode:screen;pointer-events:none;z-index:0}
+.cadre{position:relative;z-index:1}
+
 /* --- Page Portfolio --- */
 .filtres{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;max-width:52rem;margin:0 auto 2rem}
 .filtres button{padding:.55rem 1.2rem;border-radius:999px;border:1px solid var(--fin);background:rgba(0,0,0,.35);color:var(--creme);font:inherit;font-size:.9rem;cursor:pointer;transition:background .15s,border-color .15s}
