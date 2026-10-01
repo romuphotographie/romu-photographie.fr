@@ -49,12 +49,8 @@ p{margin:0 0 1rem}
 .contact dd{margin:0;overflow-wrap:anywhere}
 footer{text-align:center;opacity:.6;font-size:.9rem;padding-top:1rem}
 @media(max-width:600px){.cadre{padding-top:1.5rem}.entete,.marque{gap:1.25rem}.portrait{width:150px;height:150px}.petit .portrait{width:90px;height:90px}.bandeau a{padding:.6rem .7rem}.contact dt{flex-basis:100%}}
-
-/* --- Galerie portfolio sur les fiches tarifs --- */
-.mini-galerie{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.6rem;max-width:34rem;margin:1.5rem auto 2rem}
+.mini-galerie{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;max-width:52rem;margin:1.75rem auto 2.25rem}
 .mini-galerie img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;border:1px solid var(--fin);display:block}
-
-/* --- Pied secondaire, formulaire, avis, à propos, mentions légales --- */
 .pied-liens{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.25rem;margin:1.5rem 0 0;padding-top:1.25rem;border-top:1px solid var(--fin);font-size:.9rem}
 .pied-liens a{opacity:.85}
 .formulaire{max-width:34rem;margin:0 auto 2rem;text-align:left;display:grid;gap:.9rem}
@@ -72,8 +68,6 @@ footer{text-align:center;opacity:.6;font-size:.9rem;padding-top:1rem}
 .legal{max-width:60ch;margin:0 auto;text-align:left;font-size:1rem}
 .legal h2{text-align:left;font-size:1.3rem;margin-top:1.75rem}
 .legal p{margin-bottom:.9rem}
-
-/* --- Location de matériel --- */
 .bandeau-info{background:linear-gradient(180deg,#f0cf88,#d9a94f);color:#1a1207;text-align:center;font-weight:700;padding:.7rem 1rem;border-radius:6px;max-width:34rem;margin:0 auto 2rem}
 .materiel-groupe{max-width:60ch;margin:0 auto 2rem;text-align:left}
 .materiel-item{border-bottom:1px solid var(--fin);padding:.9rem 0}
@@ -86,32 +80,28 @@ table.tarifs th{color:var(--or);font-size:.85rem;text-transform:uppercase;letter
 table.tarifs td{font-size:1rem}
 table.tarifs tr:hover td{background:rgba(230,184,102,.06)}
 .note-tarifs{max-width:60rem;margin:-.5rem auto 2rem;font-size:.85rem;opacity:.7;text-align:left}
-
-/* --- Lune en fond, accueil uniquement --- */
-body.accueil{position:relative}
-body.accueil::before{content:"";position:fixed;inset:0;background:url('lune-fond.jpg') no-repeat;background-position:top right;background-size:min(70vw,640px);opacity:.14;mix-blend-mode:screen;pointer-events:none;z-index:0}
-.cadre{position:relative;z-index:1}
-
-/* --- Page Portfolio --- */
 .filtres{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;max-width:52rem;margin:0 auto 2rem}
 .filtres button{padding:.55rem 1.2rem;border-radius:999px;border:1px solid var(--fin);background:rgba(0,0,0,.35);color:var(--creme);font:inherit;font-size:.9rem;cursor:pointer;transition:background .15s,border-color .15s}
 .filtres button:hover{border-color:var(--or)}
 .filtres button.actif{background:linear-gradient(180deg,#f0cf88,#d9a94f);color:#1a1207;border-color:transparent;font-weight:600}
 .filtres button:focus-visible{outline:2px solid var(--or);outline-offset:2px}
-.portfolio-grille{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;max-width:56rem;margin:0 auto}
-.portfolio-grille figure{flex:0 0 auto;width:110px;margin:0;position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--fin);aspect-ratio:1/1}
+.portfolio-grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.85rem;max-width:64rem;margin:0 auto}
+.portfolio-grille figure{margin:0;position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--fin);aspect-ratio:1/1}
 .portfolio-grille img{width:100%;height:100%;object-fit:cover;display:block}
 .portfolio-grille figcaption{position:absolute;left:0;right:0;bottom:0;padding:.5rem .7rem;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);color:var(--or-clair);font-size:.8rem}
 .cta-portfolio{display:inline-block;margin-top:.5rem;padding:.7rem 1.6rem;border:1px solid var(--or);border-radius:999px;color:var(--or-clair);text-decoration:none;font-size:.95rem}
 .cta-portfolio:hover{background:rgba(230,184,102,.12);color:#fff}
-/* --- Accueil : mise en page photo --- */
 .hero{padding:3.5rem 0 3rem;text-align:center;border-top:none}
 .hero .accroche{max-width:40ch;margin-inline:auto}
 .galerie{padding-top:1rem}
 .galerie h2{margin-bottom:.4rem}
 .galerie > p{opacity:.75;font-size:1rem;margin-bottom:1.75rem}
-.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;text-align:center}
-.carte{display:flex;align-items:center;justify-content:center;min-height:100px;padding:1.4rem 1rem;border-radius:8px;border:1px solid var(--fin);background:rgba(0,0,0,.3);text-decoration:none;color:var(--or-clair);font-size:1.15rem;font-weight:600;letter-spacing:.02em;transition:border-color .15s,background .15s}
-.carte:hover{border-color:var(--or);background:rgba(230,184,102,.08);color:#fff}
-.carte-portfolio{border-color:var(--or);background:rgba(230,184,102,.1)}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;text-align:left}
+.carte{position:relative;display:block;border-radius:10px;overflow:hidden;border:1px solid var(--fin);background:#1a140c;text-decoration:none;aspect-ratio:4/5}
+.carte:hover{border-color:var(--or)}
+.carte .cadre-photo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#221a10,#0c0a07);color:var(--fin);font-size:.85rem;text-align:center;padding:1rem}
+.carte .cadre-photo svg{width:34px;height:34px;opacity:.5;display:block;margin:0 auto .5rem}
+.carte img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.carte .etiquette{position:absolute;left:0;right:0;bottom:0;padding:.9rem 1rem;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);font-size:1.05rem;font-weight:600;color:var(--or-clair)}
 .portrait-grand{width:min(280px,60vw);height:min(280px,60vw);border-radius:50%;border:4px solid var(--or);box-shadow:0 0 40px rgba(230,184,102,.35);object-fit:cover;margin:0 auto 1.5rem}
+.warning-text { color: #ffad42; font-weight: bold; font-size: 0.85rem; display: block; margin-top: 0.2rem; }
