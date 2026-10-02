@@ -90,6 +90,7 @@ table.tarifs tr:hover td{background:rgba(230,184,102,.06)}
 /* --- Lune en fond, accueil uniquement --- */
 body.accueil{position:relative}
 body.accueil::before{content:"";position:fixed;inset:0;background:url('lune-fond.jpg') no-repeat;background-position:top right;background-size:min(70vw,640px);opacity:.14;mix-blend-mode:screen;pointer-events:none;z-index:0}
+body.accueil::after{content:"";position:fixed;inset:0;background:url('soleil-fond.jpg') no-repeat;background-position:bottom left;background-size:min(70vw,640px);opacity:.16;mix-blend-mode:screen;pointer-events:none;z-index:0}
 .cadre{position:relative;z-index:1}
 
 /* --- Page Portfolio --- */
