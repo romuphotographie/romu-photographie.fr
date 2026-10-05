@@ -99,10 +99,11 @@ body.accueil::after{content:"";position:fixed;inset:0;background:url('soleil-fon
 .filtres button:hover{border-color:var(--or)}
 .filtres button.actif{background:linear-gradient(180deg,#f0cf88,#d9a94f);color:#1a1207;border-color:transparent;font-weight:600}
 .filtres button:focus-visible{outline:2px solid var(--or);outline-offset:2px}
-.portfolio-grille{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;max-width:56rem;margin:0 auto}
-.portfolio-grille figure{flex:0 0 auto;width:110px;margin:0;position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--fin);aspect-ratio:1/1}
-.portfolio-grille img{width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in}
+.portfolio-grille{columns:2 180px;column-gap:.6rem;max-width:56rem;margin:0 auto}
+.portfolio-grille figure{position:relative;margin:0 0 .6rem;break-inside:avoid;border-radius:8px;overflow:hidden;border:1px solid var(--fin)}
+.portfolio-grille img{width:100%;height:auto;display:block;cursor:zoom-in}
 .portfolio-grille figcaption{position:absolute;left:0;right:0;bottom:0;padding:.5rem .7rem;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);color:var(--or-clair);font-size:.8rem;pointer-events:none}
+@media(min-width:700px){.portfolio-grille{columns:3 200px}}
 
 /* --- Visionneuse (lightbox) --- */
 .visionneuse{position:fixed;inset:0;background:rgba(5,4,2,.93);display:none;align-items:center;justify-content:center;z-index:50;padding:2.5rem 1rem}
