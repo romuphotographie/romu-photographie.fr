@@ -74,7 +74,7 @@ footer{text-align:center;opacity:.6;font-size:.9rem;padding-top:1rem}
 .legal p{margin-bottom:.9rem}
 
 /* --- Location de matériel --- */
-.bandeau-info{background:linear-gradient(180deg,#f0cf88,#d9a94f);color:#1a1207;text-align:center;font-weight:700;padding:.7rem 1rem;border-radius:6px;max-width:34rem;margin:0 auto 2rem}
+.bandeau-info{background:linear-gradient(180deg,#f0cf88,#d9a94f);color:#1a1207;text-align:center;font-weight:700;font-size:1.05rem;padding:.85rem 1.2rem;border-radius:6px;max-width:34rem;margin:0 auto 2rem;box-shadow:0 0 22px rgba(230,184,102,.45);letter-spacing:.01em}
 .materiel-groupe{max-width:60ch;margin:0 auto 2rem;text-align:left}
 .materiel-item{border-bottom:1px solid var(--fin);padding:.9rem 0}
 .materiel-item h3{margin:0 0 .25rem;color:var(--or-clair);font-size:1.1rem}
@@ -89,9 +89,11 @@ table.tarifs tr:hover td{background:rgba(230,184,102,.06)}
 
 /* --- Lune en fond, accueil uniquement --- */
 body.accueil{position:relative}
-body.accueil::before{content:"";position:fixed;inset:0;background:url('lune-fond.jpg') no-repeat;background-position:top right;background-size:min(95vw,900px);opacity:.55;mix-blend-mode:screen;pointer-events:none;z-index:0}
+body.accueil::before{content:"";position:fixed;inset:0;background:url('lune-fond.jpg') no-repeat;background-position:top right;background-size:min(45vw,420px);opacity:.55;mix-blend-mode:screen;pointer-events:none;z-index:0}
 .fond-silhouette{position:relative}
-.fond-silhouette::before{content:"";position:absolute;inset:0;background:url('soleil-fond.jpg') no-repeat;background-position:top center;background-size:contain;opacity:.5;mix-blend-mode:screen;pointer-events:none;z-index:0}
+.fond-silhouette::before{content:"";position:absolute;inset:0;background:url('soleil-fond.jpg') no-repeat;background-position:top center;background-size:contain;opacity:.5;mix-blend-mode:screen;pointer-events:none;z-index:0;
+  -webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 30%, black 0%, black 25%, transparent 75%);
+  mask-image:radial-gradient(ellipse 60% 55% at 50% 30%, black 0%, black 25%, transparent 75%)}
 .fond-silhouette>*{position:relative;z-index:1}
 .cadre{position:relative;z-index:1}
 
