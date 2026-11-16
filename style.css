@@ -123,3 +123,8 @@ body.accueil::before{content:"";position:fixed;inset:0;background:url('lune-fond
 @media(max-width:600px){.visionneuse .nav-v{font-size:1.3rem;padding:.5rem .7rem}}
 .cta-portfolio{display:inline-block;margin-top:.5rem;padding:.7rem 1.6rem;border:1px solid var(--or);border-radius:999px;color:var(--or-clair);text-decoration:none;font-size:.95rem}
 .cta-portfolio:hover{background:rgba(230,184,102,.12);color:#fff}
+/* --- Bouton avis Google --- */
+.bouton-avis{display:inline-block;margin:.5rem 0 1rem;padding:.9rem 2rem;background:linear-gradient(180deg,#f0cf88,#d9a94f);color:#1a1207;font-weight:700;font-size:1.05rem;border-radius:6px;text-decoration:none;box-shadow:0 0 22px rgba(230,184,102,.35)}
+.bouton-avis:hover{filter:brightness(1.08);color:#1a1207}
+.bouton-avis:focus-visible{outline:2px solid var(--or-clair);outline-offset:3px}
+.note-avis{font-size:.85rem;opacity:.7;max-width:34rem;margin:0 auto}
